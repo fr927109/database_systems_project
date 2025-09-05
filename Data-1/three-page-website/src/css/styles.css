@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff; /* White text */
+    background-color: #222; /* Dark gray background */
+}
+
+header {
+    background: #111; /* Almost black */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    background: transparent;
+}
+
+nav a:hover {
+    background: #444; /* Medium gray on hover */
+    transform: scale(1.1);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header .container {
+    position: relative;
+}
+
+.fm-logo {
+    position: absolute;
+    top: 10px;        /* Move it up a bit */
+    right: -100px;    /* Move it a little less far right */
+    width: 110px;
+    height: auto;
+    transform: none;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.main-content {
+    padding: 2rem 0;
+}
+
+.intro, .updates {
+    background: #333; /* Dark gray */
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff; /* Ensure white text */
+}
+
+.intro:hover, .updates:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: #444; /* Medium gray */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #666; /* Lighter gray on hover */
+    transform: scale(1.05);
+}
+
+footer {
+    background: #111; /* Almost black */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Place this inside the <header> section of about.html and contact.html */
+<div class="container">
+    <img src="images/fm-logo.png" alt="FM Studios Logo" class="fm-logo">
+    <!-- ...rest of your header code... -->
+</div>
